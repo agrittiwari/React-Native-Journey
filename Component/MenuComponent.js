@@ -5,14 +5,14 @@ import { ListItem } from 'react-native-elements'
 function Menu(props)
 {
 
-    keyExtractor = (item, index) => index.toString()
+    const keyExtractor = (item) => item.id.toString()
     const renderMenuItem = ({ item, index }) =>
     {
         return (
             <ListItem key={index}>
                 <ListItem.Content>
                     <ListItem.Title>{item.name}</ListItem.Title>
-                    <ListItem.Subtitle>{item.description}</ListItem.Subtitle>
+                    <ListItem.Subtitle style={{ color: 'blue' }}>{item.description}</ListItem.Subtitle>
                     <ListItem.Chevron />
                 </ListItem.Content>
             </ListItem>
