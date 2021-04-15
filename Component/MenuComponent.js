@@ -4,16 +4,20 @@ import { ListItem } from 'react-native-elements'
 
 function Menu(props)
 {
+
+    keyExtractor = (item, index) => index.toString()
     const renderMenuItem = ({ item, index }) =>
     {
         return (
-            <ListItem
-                key={index}
-                title={item.name}
-                subtitle={item.description}
-                hideChevron={true}
-                // leftAvatar={{source: require('./images/uthappizza.png')}}
-            />
+            <ListItem key={index}>
+                <ListItem.Content>
+                    <ListItem.Title>{item.name}</ListItem.Title>
+                    <ListItem.Subtitle>{item.description}</ListItem.Subtitle>
+                    <ListItem.Chevron />
+                </ListItem.Content>
+            </ListItem>
+                
+                
         )
     }
 
@@ -22,7 +26,7 @@ function Menu(props)
         <FlatList
             data={props.dishes}
             renderItem={renderMenuItem}
-            keyExtractor= {item => item.id.toString()}
+            keyExtractor= {keyExtractor}
         />
     )
 }

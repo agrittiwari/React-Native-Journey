@@ -10,12 +10,13 @@ class Main extends Component {
         this.state = {
             dishes: DISHES
         }
+       
 }
 
     render(){
         return (
             <View>
-                    <Menu dishes={this.state.dishes} />
+             <Menu dishes={this.state.dishes} />
             </View>
             
         )
