@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, FlatList } from 'react-native'
-import { ListItem } from 'react-native-elements'
+import { ListItem, Avatar } from 'react-native-elements'
 
 function Menu(props)
 {
@@ -10,6 +10,8 @@ function Menu(props)
     {
         return (
             <ListItem key={index}>
+                <Avatar source={require('./images/uthappizza.png')} />
+                onPress={() => props.onPress(item.id)}
                 <ListItem.Content>
                     <ListItem.Title>{item.name}</ListItem.Title>
                     <ListItem.Subtitle style={{ color: 'blue' }}>{item.description}</ListItem.Subtitle>
