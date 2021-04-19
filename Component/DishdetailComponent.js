@@ -4,7 +4,7 @@ import { Card } from 'react-native-elements'
 
 function RenderDish(props)
 {
-    const dish = props.dishes;
+    const dish = props.dish;
 
     if (dish != null) {
         return (
