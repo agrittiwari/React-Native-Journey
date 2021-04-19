@@ -9,9 +9,9 @@ function Menu(props)
     const renderMenuItem = ({ item, index }) =>
     {
         return (
-            <ListItem key={index}>
+            <ListItem key={index} onPress={() => props.onPress(item.id)}>
                 <Avatar source={require('./images/uthappizza.png')} />
-                onPress={() => props.onPress(item.id)}
+                
                 <ListItem.Content>
                     <ListItem.Title>{item.name}</ListItem.Title>
                     <ListItem.Subtitle style={{ color: 'blue' }}>{item.description}</ListItem.Subtitle>

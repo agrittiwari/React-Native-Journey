@@ -11,8 +11,10 @@ function RenderDish(props)
             <Card>
                 <Card.Title>{dish.name}</Card.Title>
                 <Card.Divider />
-                <image source={require('./images/uthappizza.png')} />
-                <Text style={{ margin: 10 }}>{ dish.description}</Text>
+                
+                <Card.Image source={require('./images/uthappizza.png')}>
+                    <Text style={{ margin: 10 }}>{dish.description}</Text>
+                </Card.Image>
             </Card>
         )}
         else {
@@ -25,7 +27,7 @@ function RenderDish(props)
 
 function DishDetail(props)
 {
-    return(<RenderDish dish={props.dish } />)
+    return(<RenderDish dish={props.dish }/>)
 }
 
 export default DishDetail;

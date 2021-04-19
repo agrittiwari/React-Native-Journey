@@ -24,9 +24,8 @@ class Main extends Component {
         return (
             <View style={{flex:1}}>
                 <Menu dishes={this.state.dishes}
-                onPress = {(dishId)=> this.selectDish(dishId)}
-                />
-                <DishDetail dish={this.state.dishes.filter((dish) => dish.id === this.state.selectedDish) [0]}/>
+                onPress = {(dishId)=> this.selectDish(dishId)}/>
+                <DishDetail dish={this.state.dishes.filter((dish) => dish.id === this.state.selectedDish)[0]}/>
             </View>
             
         )
