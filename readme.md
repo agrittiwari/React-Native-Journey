@@ -1,4 +1,4 @@
-![Reactnative with Expo](/images/readme.png  follow @agrit_tiwari on twitter)
+![Reactnative with Expo](/images/readme.png  "follow @agrit_tiwari on twitter")
 
 
 # To Start with the Project
