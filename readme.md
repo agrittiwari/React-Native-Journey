@@ -1,3 +1,6 @@
+![Reactnative with Expo](/images/readme.png  follow @agrit_tiwari on twitter)
+
+
 # To Start with the Project
 Clone the repo and install the packages required
 
